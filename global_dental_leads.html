@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Global Dental Leads — Automation Pitch Kit</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#f0f4f8;--s:#fff;--a:#0f4c81;--al:#e8f0fb;--t:#1a1a2e;--m:#64748b;--bd:#dde3ec;--g:#059669;--gb:#d1fae5;--b:#2563eb;--bb:#dbeafe;--o:#d97706;--ob:#fef3c7;--r:#dc2626;--rb:#fee2e2;--p:#7c3aed;--pb:#ede9fe;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--t);}
+header{background:linear-gradient(135deg,#0f4c81,#1e70ae);color:#fff;padding:32px 44px 24px;position:relative;overflow:hidden;}
+header::before{content:'🌍';position:absolute;right:165px;top:50%;transform:translateY(-50%);font-size:84px;opacity:.1;}
+header::after{content:'🦷';position:absolute;right:50px;top:50%;transform:translateY(-50%);font-size:84px;opacity:.1;}
+header h1{font-family:'Syne',sans-serif;font-size:24px;font-weight:800;}
+header p{font-size:13px;opacity:.75;margin-top:5px;}
+.stats{display:flex;background:#fff;border-bottom:1px solid var(--bd);flex-wrap:wrap;}
+.st{padding:15px 24px;border-right:1px solid var(--bd);display:flex;flex-direction:column;}
+.sn{font-family:'Syne',sans-serif;font-size:22px;font-weight:800;color:var(--a);}
+.sl{font-size:10px;color:var(--m);text-transform:uppercase;letter-spacing:.6px;margin-top:2px;}
+.filters{display:flex;gap:7px;padding:16px 44px 0;flex-wrap:wrap;}
+.fb{font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;padding:6px 14px;border-radius:20px;border:1.5px solid var(--bd);background:#fff;cursor:pointer;transition:all .15s;}
+.fb:hover,.fb.on{background:var(--a);color:#fff;border-color:var(--a);}
+main{padding:18px 44px 44px;max-width:1160px;margin:0 auto;}
+.sh{font-family:'Syne',sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.8px;color:var(--m);margin:28px 0 11px;display:flex;align-items:center;gap:10px;}
+.sh::after{content:'';flex:1;height:1px;background:var(--bd);}
+.grid{display:grid;gap:10px;}
+.lw{display:flex;flex-direction:column;}
+.lc{background:#fff;border:1.5px solid var(--bd);border-radius:11px;padding:17px 21px;display:grid;grid-template-columns:36px 1fr auto;gap:11px;align-items:start;cursor:pointer;transition:all .2s;}
+.lc:hover{box-shadow:0 4px 16px rgba(15,76,129,.09);border-color:#b8cde8;}
+.lc.open{border-color:var(--a);border-bottom-left-radius:0;border-bottom-right-radius:0;}
+.fl{font-size:24px;line-height:1;margin-top:3px;}
+.ln{font-family:'Syne',sans-serif;font-size:14px;font-weight:700;margin-bottom:3px;}
+.lm{font-size:12px;color:var(--m);line-height:1.75;}
+.lm a{color:var(--a);text-decoration:none;}
+.lm a:hover{text-decoration:underline;}
+.ltags{display:flex;gap:4px;flex-wrap:wrap;margin-top:7px;}
+.tg{font-size:10px;font-weight:600;padding:2px 8px;border-radius:20px;}
+.tg-g{background:var(--gb);color:var(--g);}
+.tg-b{background:var(--bb);color:var(--b);}
+.tg-o{background:var(--ob);color:var(--o);}
+.tg-r{background:var(--rb);color:var(--r);}
+.tg-p{background:var(--pb);color:var(--p);}
+.la{display:flex;flex-direction:column;gap:5px;align-items:flex-end;}
+.badge{font-size:10px;font-weight:700;padding:3px 9px;border-radius:20px;text-transform:uppercase;letter-spacing:.4px;}
+.hot{background:var(--rb);color:#b91c1c;}
+.warm{background:var(--ob);color:#92400e;}
+.med{background:var(--gb);color:#065f46;}
+.btn{font-family:'DM Sans',sans-serif;font-size:11.5px;font-weight:600;padding:6px 12px;border-radius:7px;border:none;cursor:pointer;white-space:nowrap;background:var(--a);color:#fff;transition:background .15s;}
+.btn:hover{background:#0a3d6b;}
+.ep{background:#fafbfd;border:1.5px solid var(--a);border-top:none;border-radius:0 0 11px 11px;display:none;}
+.ep.open{display:block;animation:fi .2s ease;}
+@keyframes fi{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
+.eph{background:var(--al);padding:10px 20px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #ccdcf5;}
+.epl{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--a);}
+.tabs{display:flex;gap:4px;}
+.tb{font-size:11px;padding:4px 12px;border-radius:5px;cursor:pointer;font-family:'DM Sans',sans-serif;background:#fff;color:var(--m);font-weight:500;border:1px solid var(--bd);transition:all .15s;}
+.tb.on{background:var(--a);color:#fff;border-color:var(--a);}
+.epb{padding:18px 22px;}
+.er{margin-bottom:11px;}
+.er label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--m);display:block;margin-bottom:4px;}
+.er .v{font-size:13px;line-height:1.8;white-space:pre-line;}
+.er .vs{font-weight:700;font-size:14px;}
+.div{height:1px;background:var(--bd);margin:11px 0;}
+.tc{display:none;}.tc.on{display:block;}
+.cp{display:inline-flex;align-items:center;gap:5px;font-size:12px;background:var(--a);color:#fff;border:none;padding:7px 15px;border-radius:7px;cursor:pointer;font-family:'DM Sans',sans-serif;margin-top:8px;font-weight:600;transition:background .15s;}
+.cp:hover{background:#0a3d6b;}.cp.done{background:var(--g);}
+.tips{background:#fff;border:1px solid var(--bd);border-radius:12px;padding:22px 26px;margin-top:32px;}
+.tips h3{font-family:'Syne',sans-serif;font-size:14px;font-weight:800;color:var(--a);margin-bottom:13px;}
+.tgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(195px,1fr));gap:9px;}
+.tip{background:var(--al);border-radius:9px;padding:12px 14px;}
+.tip .tt{font-weight:700;font-size:12px;color:var(--a);margin-bottom:4px;}
+.tip p{font-size:11.5px;color:#334155;line-height:1.6;}
+footer{text-align:center;padding:24px;color:var(--m);font-size:11px;}
+@media(max-width:680px){header,main,.filters{padding-left:14px;padding-right:14px;}.lc{grid-template-columns:30px 1fr;}.la{display:none;}}
+</style>
+</head>
+<body>
+<header>
+  <h1>🌍 Global Dental Clinic Leads</h1>
+  <p>Appointment Automation Pitch Kit &nbsp;·&nbsp; 15 Verified Leads &nbsp;·&nbsp; 6 Countries &nbsp;·&nbsp; Ready-to-Send Emails</p>
+</header>
+<div class="stats">
+  <div class="st"><span class="sn">15</span><span class="sl">Total Leads</span></div>
+  <div class="st"><span class="sn">6</span><span class="sl">Countries</span></div>
+  <div class="st"><span class="sn">9</span><span class="sl">With Email</span></div>
+  <div class="st"><span class="sn">5</span><span class="sl">🔴 Hot</span></div>
+  <div class="st"><span class="sn">6</span><span class="sl">🟡 Warm</span></div>
+  <div class="st"><span class="sn">4</span><span class="sl">🟢 Medium</span></div>
+</div>
+<div class="filters">
+  <button class="fb on" onclick="fil('all',this)">🌍 All</button>
+  <button class="fb" onclick="fil('uk',this)">🇬🇧 UK</button>
+  <button class="fb" onclick="fil('uae',this)">🇦🇪 UAE</button>
+  <button class="fb" onclick="fil('aus',this)">🇦🇺 Australia</button>
+  <button class="fb" onclick="fil('can',this)">🇨🇦 Canada</button>
+  <button class="fb" onclick="fil('usa',this)">🇺🇸 USA</button>
+  <button class="fb" onclick="fil('ind',this)">🇮🇳 India</button>
+</div>
+<main>
+
+<!-- ===== UK ===== -->
+<div class="sh country-uk">🇬🇧 United Kingdom — Private Dental Clinics</div>
+<div class="grid">
+
+<div class="lw country-uk">
+  <div class="lc" onclick="tog('e1',this)">
+    <div class="fl">🇬🇧</div>
+    <div>
+      <div class="ln">Beaufort Park Dental (BPDS Chepstow)</div>
+      <div class="lm">Chepstow, Wales, UK · ✉️ <a href="mailto:reception@beaufortdentalcare.co.uk">reception@beaufortdentalcare.co.uk</a><br>🌐 beaufortdentalcare.co.uk</div>
+      <div class="ltags"><span class="tg tg-g">✉️ Email Found</span><span class="tg tg-r">Manual Callback Form</span><span class="tg tg-o">Invisalign/CFast</span></div>
+    </div>
+    <div class="la"><span class="badge hot">🔴 Hot</span><button class="btn">View Email ↓</button></div>
+  </div>
+  <div class="ep" id="e1">
+    <div class="eph"><span class="epl">Pitch Email</span><div class="tabs"><button class="tb on" onclick="swt('e1',0,this)">Professional</button><button class="tb" onclick="swt('e1',1,this)">Casual</button></div></div>
+    <div class="epb">
+      <div class="er"><label>To</label><div class="v">reception@beaufortdentalcare.co.uk</div></div>
+      <div class="er"><label>Subject</label>
+        <div class="v vs tc on" id="e1-s0">Your Booking Form Says "We Will Contact You" — Let's Automate That</div>
+        <div class="v vs tc" id="e1-s1">Still Manually Confirming Appointments? 👋</div>
+      </div>
+      <div class="div"></div>
+      <div class="er"><label>Message</label>
+        <div class="v tc on" id="e1-b0">Hi Beaufort Park Dental Team,
+
+I came across your website and noticed that when patients fill in your appointment form, it says: "Please complete the form and we will contact you by telephone during working hours to confirm your booking."
+
+That manual callback step is where most clinics lose time — and occasionally, patients who don't hear back quickly enough.
+
+I help private dental practices automate this entire flow:
+
+✅ Instant Confirmation — Patient submits → automatic email/SMS fires immediately. No manual call needed.
+✅ Smart Reminders — Automated reminders 24 hours and 2 hours before each appointment. No-shows drop significantly.
+✅ Patient CRM — All patient details, enquiry history, and treatment preferences in one dashboard.
+✅ Post-Visit Follow-Up — Automatic message after the visit requesting a Google review or rebooking.
+✅ Out-of-Hours Coverage — Patients who book evenings/weekends get an instant acknowledgement, not silence.
+
+For a cosmetic-focused practice like Beaufort Park — where Invisalign and CFast journeys span several months — a CRM can also significantly improve patient retention and rebooking rates.
+
+I'd love to offer a free 20-minute walkthrough — no obligation whatsoever.
+
+Would any slot this week work for a quick call?
+
+Kind regards,
+[Your Name]
+[Phone / WhatsApp]
+[Website]</div>
+        <div class="v tc" id="e1-b1">Hi Beaufort Park Team,
+
+Noticed your booking form says patients should expect a callback to confirm. Still a manual process?
+
+I help dental practices automate exactly this — form submitted → instant confirmation sent → reminders go out automatically → CRM logs everything. Zero manual effort.
+
+Free 20-min demo this week?
+
+[Your Name] — [WhatsApp]</div>
+      </div>
+      <button class="cp" id="cp-e1" onclick="cop('e1')">📋 Copy Email</button>
+    </div>
+  </div>
+</div>
+
+<div class="lw country-uk">
+  <div class="lc" onclick="tog('e2',this)">
+    <div class="fl">🇬🇧</div>
+    <div>
+      <div class="ln">Cosmo Clinic — East London (Award Winning 2021)</div>
+      <div class="lm">East London, UK · ✉️ <a href="mailto:info@cosmo-clinic.co.uk">info@cosmo-clinic.co.uk</a> · 📞 02077396574</div>
+      <div class="ltags"><span class="tg tg-g">✉️ Email Found</span><span class="tg tg-b">Contact Form</span><span class="tg tg-p">Award Winning</span></div>
+    </div>
+    <div class="la"><span class="badge hot">🔴 Hot</span><button class="btn">View Email ↓</button></div>
+  </div>
+  <div class="ep" id="e2">
+    <div class="eph"><span class="epl">Pitch Email</span><div class="tabs"><button class="tb on" onclick="swt('e2',0,this)">Professional</button><button class="tb" onclick="swt('e2',1,this)">Casual</button></div></div>
+    <div class="epb">
+      <div class="er"><label>To</label><div class="v">info@cosmo-clinic.co.uk</div></div>
+      <div class="er"><label>Subject</label>
+        <div class="v vs tc on" id="e2-s0">Automate Patient Bookings & Follow-Up — Free Demo for Cosmo Clinic</div>
+        <div class="v vs tc" id="e2-s1">Your Team Deserves Less Admin Work 😊</div>
+      </div>
+      <div class="div"></div>
+      <div class="er"><label>Message</label>
+        <div class="v tc on" id="e2-b0">Hi Cosmo Clinic Team,
+
+Congratulations on winning Best Cosmetic Dental Practice London 2021 — a well-earned recognition.
+
+I wanted to reach out about something that could save your front desk real time every week. Your website has a contact form where patients fill in details and await a response — which means someone is manually processing and following up on each enquiry.
+
+Here's what I can automate for you:
+
+✅ Instant confirmations via email or SMS the moment a patient enquires
+✅ Automated reminders reducing no-shows by 40–60%
+✅ A patient CRM tracking every enquiry, treatment, and follow-up
+✅ Post-visit messages for Google reviews and rebooking — fully automatic
+
+For a high-end cosmetic practice where long-term patient relationships drive growth, the CRM layer alone can meaningfully increase lifetime value.
+
+I'd love to give you a complimentary 20-minute walkthrough — no strings attached.
+
+Shall I send over a few time slots this week?
+
+Best,
+[Your Name]
+[Your Contact]</div>
+        <div class="v tc" id="e2-b1">Hi Cosmo Clinic,
+
+Award-winning practice + manual follow-up process = an easy automation win 😄
+
+Instant confirmations, smart reminders, patient CRM, post-visit reviews — all automatic.
+
+Free 20-min demo? No sales pressure 😊
+
+[Your Name] — [WhatsApp]</div>
+      </div>
+      <button class="cp" id="cp-e2" onclick="cop('e2')">📋 Copy Email</button>
+    </div>
+  </div>
+</div>
+
+<div class="lw country-uk">
+  <div class="lc" onclick="tog('e3',this)">
+    <div class="fl">🇬🇧</div>
+    <div>
+      <div class="ln">Wimpole Street Dental Clinic — Harley Street, London</div>
+      <div class="lm">Harley Street District, London · ✉️ <a href="mailto:reception@wsdental.clinic">reception@wsdental.clinic</a></div>
+      <div class="ltags"><span class="tg tg-g">✉️ Email Found</span><span class="tg tg-b">Online Booking</span><span class="tg tg-o">High-End Private</span></div>
+    </div>
+    <div class="la"><span class="badge warm">🟡 Warm</span><button class="btn">View Email ↓</button></div>
+  </div>
+  <div class="ep" id="e3">
+    <div class="eph"><span class="epl">Pitch Email</span></div>
+    <div class="epb">
+      <div class="er"><label>To</label><div class="v">reception@wsdental.clinic</div></div>
+      <div class="er"><label>Subject</label><div class="v vs">Elevate Patient Experience at Wimpole Street — Automation Demo</div></div>
+      <div class="div"></div>
+      <div class="er"><label>Message</label><div class="v">Dear Wimpole Street Dental Team,
+
+Your reputation for cutting-edge, evidence-based dentistry in London's Harley Street district is outstanding.
+
+I'd like to propose something that aligns with your commitment to a seamless, modern patient experience: full appointment and patient journey automation.
+
+Many premium London practices still rely on manual steps after patients submit online booking requests. We eliminate that entirely:
+
+✅ Patients receive instant, branded confirmations via email the moment they book
+✅ Automated reminders personalised to each treatment type
+✅ A full patient CRM — every interaction, note, and follow-up in one place
+✅ Post-treatment feedback requests sent automatically to grow your Google review profile
+
+For a high-value private clinic in a competitive London market, the speed and professionalism of your booking experience is as important as the treatment itself.
+
+I'd welcome the opportunity to show you a 20-minute demo. Happy to work around your schedule.
+
+Warm regards,
+[Your Name]
+[Your Contact]</div></div>
+      <button class="cp" id="cp-e3" onclick="cop('e3')">📋 Copy Email</button>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!-- ===== UAE ===== -->
+<div class="sh country-uae">🇦🇪 UAE — Dubai Dental Clinics</div>
+<div class="grid">
+
+<div class="lw country-uae">
+  <div class="lc" onclick="tog('e4',this)">
+    <div class="fl">🇦🇪</div>
+    <div>
+      <div class="ln">Acer Dental Clinic Dubai (ACDC)</div>
+      <div class="lm">Motor City, Dubai · ✉️ <a href="mailto:info@acdc.ae">info@acdc.ae</a> · 📞 04-4284455 · 🌐 acdc.ae</div>
+      <div class="ltags"><span class="tg tg-g">✉️ Email Found</span><span class="tg tg-r">Manual Callback</span><span class="tg tg-o">20 Yrs Experience</span></div>
+    </div>
+    <div class="la"><span class="badge hot">🔴 Hot</span><button class="btn">View Email ↓</button></div>
+  </div>
+  <div class="ep" id="e4">
+    <div class="eph"><span class="epl">Pitch Email</span><div class="tabs"><button class="tb on" onclick="swt('e4',0,this)">Professional</button><button class="tb" onclick="swt('e4',1,this)">Casual</button></div></div>
+    <div class="epb">
+      <div class="er"><label>To</label><div class="v">info@acdc.ae</div></div>
+      <div class="er"><label>Subject</label>
+        <div class="v vs tc on" id="e4-s0">Automate ACDC's Appointment Process — Free Demo This Week</div>
+        <div class="v vs tc" id="e4-s1">Quick Question About Your Appointment Bookings 👋</div>
+      </div>
+      <div class="div"></div>
+      <div class="er"><label>Message</label>
+        <div class="v tc on" id="e4-b0">Dear ACDC Team,
+
+I visited acdc.ae — 20+ years of experience, a full team of specialists, and even virtual consultations. Genuinely impressive.
+
+I noticed your website asks patients to email or call to book, which means your team handles confirmations manually. In Dubai's competitive dental market, response speed is a real differentiator — patients who don't hear back in minutes often move on.
+
+Here's what I can set up for you:
+
+✅ Instant WhatsApp + Email Confirmation — Patient enquires → confirmation fires immediately. No manual step.
+✅ Smart Reminders — Sent automatically 24 hrs and 2 hrs before each appointment.
+✅ Patient CRM — Full history, notes, and treatment records for every patient in one place.
+✅ Virtual Consultation Scheduling — Automate your online consult booking flow too.
+✅ Post-Visit Reviews — Automatic WhatsApp/email after each visit requesting a Google review.
+
+I'd love to give you a free 20-minute demo this week. No commitment.
+
+Best regards,
+[Your Name]
+[WhatsApp: +XX XXXXXXXXXX]</div>
+        <div class="v tc" id="e4-b1">Hi ACDC Team 👋
+
+20 years, full specialist team, virtual consults — really impressive setup!
+
+Quick question: when patients email or call to book, is that still handled manually by your team?
+
+I automate this for Dubai clinics:
+→ Instant WhatsApp + email confirmation
+→ Auto-reminders (no-shows drop fast)
+→ Patient CRM
+→ Post-visit Google review automation
+
+Free 20-min demo? [Your Name] — [WhatsApp]</div>
+      </div>
+      <button class="cp" id="cp-e4" onclick="cop('e4')">📋 Copy Email</button>
+    </div>
+  </div>
+</div>
+
+<div class="lw country-uae">
+  <div class="lc" onclick="tog('e5',this)">
+    <div class="fl">🇦🇪</div>
+    <div>
+      <div class="ln">Avance Dental Clinic — Deira, IBN Battuta &amp; Motor City</div>
+      <div class="lm">3 Locations, Dubai · 🌐 avancedental.net<br><span style="color:#d97706;font-size:11.5px">⚠️ No public email — use booking form</span></div>
+      <div class="ltags"><span class="tg tg-b">3 Locations</span><span class="tg tg-b">Booking Form</span><span class="tg tg-p">High Reviews</span></div>
+    </div>
+    <div class="la"><span class="badge warm">🟡 Warm</span><button class="btn">View Email ↓</button></div>
+  </div>
+  <div class="ep" id="e5">
+    <div class="eph"><span class="epl">Pitch (via Website Form)</span></div>
+    <div class="epb">
+      <div class="er"><label>Send Via</label><div class="v">avancedental.net — appointment form</div></div>
+      <div class="div"></div>
+      <div class="er"><label>Message</label><div class="v">Hi Avance Dental Team,
+
+Managing bookings across 3 Dubai locations — Deira, IBN Battuta, and Motor City — must involve significant daily coordination.
+
+I help multi-location dental clinics automate this:
+
+✅ Patients book → instant WhatsApp + email confirmation (branch-specific)
+✅ Smart reminders reduce no-shows across all locations
+✅ Centralised CRM — patient history accessible at any branch
+✅ Post-visit automation for Google reviews and rebooking
+
+Free 20-min demo of what this looks like for a 3-branch setup?
+
+[Your Name] / [Contact]</div></div>
+      <button class="cp" id="cp-e5" onclick="cop('e5')">📋 Copy Message</button>
+    </div>
+  </div>
+</div>
+
+<div class="lw country-uae">
+  <div class="lc" onclick="tog('e6',this)">
+    <div class="fl">🇦🇪</div>
+    <div>
+      <div class="ln">Dr. Michael's Dental Clinic — Multiple Dubai Locations</div>
+      <div class="lm">Multiple Locations, Dubai · 25 Years in UAE · 🌐 drmichaels.com<br><span style="color:#d97706;font-size:11.5px">⚠️ No public email — reach via website</span></div>
+      <div class="ltags"><span class="tg tg-b">Multi-Location</span><span class="tg tg-o">25 Yrs UAE</span><span class="tg tg-p">Family Dental</span></div>
+    </div>
+    <div class="la"><span class="badge warm">🟡 Warm</span><button class="btn">View Email ↓</button></div>
+  </div>
+  <div class="ep" id="e6">
+    <div class="eph"><span class="epl">Pitch (via Website Form)</span></div>
+    <div class="epb">
+      <div class="er"><label>Send Via</label><div class="v">drmichaels.com — contact form</div></div>
+      <div class="div"></div>
+      <div class="er"><label>Message</label><div class="v">Dear Dr. Michael's Team,
+
+25 years serving families across the UAE with multiple locations is a remarkable achievement. Managing appointments and follow-ups across all your branches involves significant coordination.
+
+I help multi-location dental groups automate this entirely:
+
+✅ Centralised patient CRM across all locations
+✅ Instant booking confirmations via WhatsApp + email
+✅ Smart reminders reducing no-shows network-wide
+✅ Automated post-visit follow-up for reviews and rebooking
+
+Your multi-generational patient relationships are exactly where a CRM adds most value — tracking family histories, recall schedules, and treatment plans across locations.
+
+Free 20-min demo this week?
+
+[Your Name] / [Contact]</div></div>
+      <button class="cp" id="cp-e6" onclick="cop('e6')">📋 Copy Message</button>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!-- ===== AUSTRALIA ===== -->
+<div class="sh country-aus">🇦🇺 Australia — Manual Booking Flows Confirmed</div>
+<div class="grid">
+
+<div class="lw country-aus">
+  <div class="lc" onclick="tog('e7',this)">
+    <div class="fl">🇦🇺</div>
+    <div>
+      <div class="ln">HealthPartners Dental — 3 Locations</div>
+      <div class="lm">Australia (Multiple Locations) · 📞 1300 114 114 · 🌐 healthpartners.com.au<br><span style="color:#dc2626;font-size:11.5px">🔴 Confirmed: "a member of our team will call you to confirm"</span></div>
+      <div class="ltags"><span class="tg tg-r">Manual Callback Confirmed</span><span class="tg tg-b">Multi-Location</span></div>
+    </div>
+    <div class="la"><span class="badge hot">🔴 Hot</span><button class="btn">View Email ↓</button></div>
+  </div>
+  <div class="ep" id="e7">
+    <div class="eph"><span class="epl">Pitch Message</span><div class="tabs"><button class="tb on" onclick="swt('e7',0,this)">Professional</button><button class="tb" onclick="swt('e7',1,this)">Casual</button></div></div>
+    <div class="epb">
+      <div class="er"><label>Contact Via</label><div class="v">healthpartners.com.au contact form or 1300 114 114</div></div>
+      <div class="er"><label>Subject</label>
+        <div class="v vs tc on" id="e7-s0">Eliminate Manual Confirmation Calls Across All 3 Locations</div>
+        <div class="v vs tc" id="e7-s1">3 Locations × Manual Callbacks = A Lot of Daily Admin 😅</div>
+      </div>
+      <div class="div"></div>
+      <div class="er"><label>Message</label>
+        <div class="v tc on" id="e7-b0">Hi HealthPartners Dental Team,
+
+I visited your appointment request page and noticed it clearly states: "a member of our team will call you to confirm." Across 3 locations, that's a significant number of manual callbacks to manage every day.
+
+I help multi-location dental clinics in Australia automate this entirely:
+
+✅ Instant Confirmation — Patient submits → automatic email confirmation fires. No callback needed.
+✅ Location-Specific Flows — Each branch gets its own notifications and confirmation messages.
+✅ Smart Reminders — Sent automatically before every appointment at all locations.
+✅ Centralised Patient CRM — Full history accessible across all 3 sites.
+✅ Post-Visit Automation — Review requests and rebooking prompts sent after every visit.
+
+For a group practice across multiple sites, the time savings can be 10–15 hours of admin per week, per location.
+
+I'd love to offer a free 20-minute demo tailored to your setup.
+
+Would this week suit a call?
+
+Kind regards,
+[Your Name]
+[Your Contact]</div>
+        <div class="v tc" id="e7-b1">Hi HealthPartners,
+
+"We will call you to confirm" × 3 locations = serious daily admin 😅
+
+I automate this for multi-location Aussie clinics:
+→ Instant email confirmation (no callbacks)
+→ Reminders across all branches on autopilot
+→ Centralised CRM across all locations
+→ Post-visit follow-ups automatically
+
+Free 20-min demo — could save your team 30+ hrs/week combined.
+
+[Your Name] — [Contact]</div>
+      </div>
+      <button class="cp" id="cp-e7" onclick="cop('e7')">📋 Copy Message</button>
+    </div>
+  </div>
+</div>
+
+<div class="lw country-aus">
+  <div class="lc" onclick="tog('e8',this)">
+    <div class="fl">🇦🇺</div>
+    <div>
+      <div class="ln">DentalOne Australia</div>
+      <div class="lm">Multiple Clinics, Australia · 🌐 dental1.com.au<br><span style="color:#dc2626;font-size:11.5px">🔴 Confirmed: "we will contact you to confirm your appointment"</span></div>
+      <div class="ltags"><span class="tg tg-r">Manual Callback Confirmed</span><span class="tg tg-b">Booking Form</span><span class="tg tg-o">Multi-Location</span></div>
+    </div>
+    <div class="la"><span class="badge hot">🔴 Hot</span><button class="btn">View Email ↓</button></div>
+  </div>
+  <div class="ep" id="e8">
+    <div class="eph"><span class="epl">Pitch (via Website Form)</span></div>
+    <div class="epb">
+      <div class="er"><label>Send Via</label><div class="v">dental1.com.au — booking form</div></div>
+      <div class="div"></div>
+      <div class="er"><label>Message</label><div class="v">Hi DentalOne Team,
+
+I came across your booking page and noticed: "we will contact you to confirm your appointment." That manual confirmation step is exactly what I help dental clinics eliminate.
+
+I build automation systems for clinics like yours:
+
+✅ Patient fills form → instant confirmation sent automatically
+✅ Reminders 24 hrs and 2 hrs before each appointment
+✅ Patient CRM — full history and notes in one dashboard
+✅ Post-visit Google review automation
+
+Your front desk gets their time back. Patients get a faster, more professional experience from the very first click.
+
+Free 20-min walkthrough — happy to fit around your schedule.
+
+[Your Name]
+[Your Contact]</div></div>
+      <button class="cp" id="cp-e8" onclick="cop('e8')">📋 Copy Message</button>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!-- ===== CANADA ===== -->
+<div class="sh country-can">🇨🇦 Canada — Private Practices</div>
+<div class="grid">
+
+<div class="lw country-can">
+  <div class="lc" onclick="tog('e9',this)">
+    <div class="fl">🇨🇦</div>
+    <div>
+      <div class="ln">Downtown Dentistry — Toronto</div>
+      <div class="lm">Toronto, Ontario · 📞 (647) 360-6650 · 🌐 downtowndentistry.com<br><span style="color:#d97706;font-size:11.5px">⚠️ No public email — use website contact form</span></div>
+      <div class="ltags"><span class="tg tg-b">Online Booking</span><span class="tg tg-o">Downtown Toronto</span><span class="tg tg-p">Advanced Tech</span></div>
+    </div>
+    <div class="la"><span class="badge warm">🟡 Warm</span><button class="btn">View Email ↓</button></div>
+  </div>
+  <div class="ep" id="e9">
+    <div class="eph"><span class="epl">Pitch (via Website Form)</span></div>
+    <div class="epb">
+      <div class="er"><label>Send Via</label><div class="v">downtowndentistry.com — contact form</div></div>
+      <div class="div"></div>
+      <div class="er"><label>Message</label><div class="v">Hi Downtown Dentistry,
+
+Your investment in advanced technology — digital X-rays, laser dentistry, medical-grade air purification — shows a real commitment to a premium patient experience.
+
+I'd like to suggest extending that same standard to your appointment process.
+
+I help Toronto practices automate the full patient journey:
+
+✅ Instant email confirmation on every booking submission
+✅ Automated reminders that reduce no-shows by 40–60%
+✅ Patient CRM — complete treatment history at a glance
+✅ Post-visit follow-up for Google reviews and rebooking
+
+In downtown Toronto, patients have many choices. Fast, professional responses set the tone before they ever walk in.
+
+Free 20-minute demo this week?
+
+[Your Name]
+[Your Contact]</div></div>
+      <button class="cp" id="cp-e9" onclick="cop('e9')">📋 Copy Message</button>
+    </div>
+  </div>
+</div>
+
+<div class="lw country-can">
+  <div class="lc" onclick="tog('e10',this)">
+    <div class="fl">🇨🇦</div>
+    <div>
+      <div class="ln">Altima Dental — Multi-Location Canada (123Dentist Network)</div>
+      <div class="lm">North York, Mississauga, Hamilton + Canada-Wide · 🌐 altimadental.com</div>
+      <div class="ltags"><span class="tg tg-b">Multi-Location</span><span class="tg tg-o">30+ Years</span><span class="tg tg-p">123Dentist Network</span></div>
+    </div>
+    <div class="la"><span class="badge med">🟢 Medium</span><button class="btn">View Email ↓</button></div>
+  </div>
+  <div class="ep" id="e10">
+    <div class="eph"><span class="epl">Pitch (via Website Contact)</span></div>
+    <div class="epb">
+      <div class="er"><label>Send Via</label><div class="v">altimadental.com — contact form</div></div>
+      <div class="div"></div>
+      <div class="er"><label>Message</label><div class="v">Hi Altima Dental Team,
+
+30+ years in Canadian dentistry and now part of the 123Dentist network — Altima clearly operates at real scale. Managing consistent patient communication across dozens of locations is a genuine challenge.
+
+Even where online booking is in place, the post-visit and CRM layer is often missing — and that's where significant retention and revenue goes uncaptured.
+
+I help multi-location dental groups automate:
+
+✅ Centralised patient CRM across all branches
+✅ Automated post-visit follow-up (reviews, rebooking, recall reminders)
+✅ Smart reminders reducing no-shows network-wide
+✅ Consistent, branded patient communication from first booking through treatment
+
+I'd love to explore what this looks like at Altima's scale. Would a brief call this week be possible?
+
+[Your Name]
+[Your Contact]</div></div>
+      <button class="cp" id="cp-e10" onclick="cop('e10')">📋 Copy Message</button>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!-- ===== USA ===== -->
+<div class="sh country-usa">🇺🇸 USA — High-Value Targets</div>
+<div class="grid">
+
+<div class="lw country-usa">
+  <div class="lc" onclick="tog('e11',this)">
+    <div class="fl">🇺🇸</div>
+    <div>
+      <div class="ln">Dental Oral Surgery NYC — Bronx, Queens, Manhattan &amp; Connecticut</div>
+      <div class="lm">New York City + Connecticut · 📞 347-590-9910 · 🌐 dentaloralsurgery.com<br><span style="color:#dc2626;font-size:11.5px">🔴 Confirmed: "We'll get back to you within 24–48 hours"</span></div>
+      <div class="ltags"><span class="tg tg-r">24-48 Hr Response Confirmed</span><span class="tg tg-b">Multi-Location NYC</span><span class="tg tg-o">Oral Surgery</span></div>
+    </div>
+    <div class="la"><span class="badge hot">🔴 Hot</span><button class="btn">View Email ↓</button></div>
+  </div>
+  <div class="ep" id="e11">
+    <div class="eph"><span class="epl">Pitch Message</span><div class="tabs"><button class="tb on" onclick="swt('e11',0,this)">Professional</button><button class="tb" onclick="swt('e11',1,this)">Casual</button></div></div>
+    <div class="epb">
+      <div class="er"><label>Contact Via</label><div class="v">dentaloralsurgery.com — appointment form</div></div>
+      <div class="er"><label>Subject</label>
+        <div class="v vs tc on" id="e11-s0">Cut That 24–48 Hour Response Time to Instant — Free Demo</div>
+        <div class="v vs tc" id="e11-s1">NYC Patients Won't Wait 48 Hours ⚡ Let's Fix That</div>
+      </div>
+      <div class="div"></div>
+      <div class="er"><label>Message</label>
+        <div class="v tc on" id="e11-b0">Hi NYC Dental Oral Surgery Team,
+
+I visited your appointment request page and noticed this line: "We'll get back to you within 24–48 hours."
+
+In New York City, where patients have dozens of oral surgery options, a 24–48 hour window means many will move on to a competitor who responds in minutes.
+
+Here's what I can build for your practice:
+
+✅ Instant Confirmation — Patient submits form → automated confirmation fires immediately. No 24-hour wait.
+✅ Pre-Op Reminders — For oral surgery cases specifically, automated reminders with pre-procedure instructions reduce cancellations and preparation callbacks.
+✅ Multi-Location CRM — Patient records synced across all your NYC and Connecticut locations.
+✅ Post-Procedure Reviews — Automated follow-up after each procedure requesting a Google review.
+
+Every booking that falls through during a 24-hour wait is a procedure not performed — in oral surgery, that's significant revenue.
+
+Free 20-minute walkthrough, no strings. Would this week work?
+
+Best,
+[Your Name]
+[Your Contact]</div>
+        <div class="v tc" id="e11-b1">Hi NYC Oral Surgery Team,
+
+"We'll get back to you within 24–48 hours" — in NYC? Most patients have moved on by then 😅
+
+I help practices go instant:
+→ Automated confirmation the second a form is submitted
+→ Pre-op reminder automation
+→ Multi-location CRM across NYC + CT
+→ Post-procedure Google review automation
+
+Free 20-min demo. Worth it?
+
+[Your Name] — [Contact]</div>
+      </div>
+      <button class="cp" id="cp-e11" onclick="cop('e11')">📋 Copy Message</button>
+    </div>
+  </div>
+</div>
+
+<div class="lw country-usa">
+  <div class="lc" onclick="tog('e12',this)">
+    <div class="fl">🇺🇸</div>
+    <div>
+      <div class="ln">Cosmetic Dentistry Clinic — London/International</div>
+      <div class="lm">📞 020 71830755 · 🌐 cosmeticdentistryclinic.co.uk<br><span style="color:#d97706;font-size:11.5px">⚠️ "A member will always be ready to help" — manual support model</span></div>
+      <div class="ltags"><span class="tg tg-b">Contact Form</span><span class="tg tg-o">Cosmetic Focus</span><span class="tg tg-p">Private High-End</span></div>
+    </div>
+    <div class="la"><span class="badge med">🟢 Medium</span><button class="btn">View Email ↓</button></div>
+  </div>
+  <div class="ep" id="e12">
+    <div class="eph"><span class="epl">Pitch (via Website Form)</span></div>
+    <div class="epb">
+      <div class="er"><label>Send Via</label><div class="v">cosmeticdentistryclinic.co.uk — booking form</div></div>
+      <div class="div"></div>
+      <div class="er"><label>Message</label><div class="v">Hi Cosmetic Dentistry Clinic Team,
+
+Your clinic's commitment to transparent pricing and personalised cosmetic care clearly resonates with patients.
+
+I noticed your booking process still involves manual handling and follow-up. For a cosmetic practice where patient journeys often span multiple treatments, automation can make a real difference:
+
+✅ Instant booking confirmations via email/SMS
+✅ Automated reminders tailored to treatment type (whitening, veneers, implants)
+✅ Patient CRM with full treatment history and follow-up notes
+✅ Post-visit review automation to build your Google and Trustpilot profiles
+
+The CRM layer in particular helps extend patient lifetime value and increases referrals from existing patients.
+
+Free 20-minute demo — no obligation at all.
+
+[Your Name]
+[Your Contact]</div></div>
+      <button class="cp" id="cp-e12" onclick="cop('e12')">📋 Copy Message</button>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!-- ===== INDIA ===== -->
+<div class="sh country-ind">🇮🇳 India — Indore &amp; Beyond</div>
+<div class="grid">
+
+<div class="lw country-ind">
+  <div class="lc" onclick="tog('e13',this)">
+    <div class="fl">🇮🇳</div>
+    <div>
+      <div class="ln">Smile Craft Dental Implant Centre</div>
+      <div class="lm">India · ✉️ <a href="mailto:info@smilecraftdentalimplantcentre.com">info@smilecraftdentalimplantcentre.com</a><br>🌐 smilecraftdentalimplantcentre.com</div>
+      <div class="ltags"><span class="tg tg-g">✉️ Email Found</span><span class="tg tg-r">Manual Form Confirmed</span><span class="tg tg-o">Original Lead</span></div>
+    </div>
+    <div class="la"><span class="badge hot">🔴 Hot</span><button class="btn">View Email ↓</button></div>
+  </div>
+  <div class="ep" id="e13">
+    <div class="eph"><span class="epl">Pitch Email</span><div class="tabs"><button class="tb on" onclick="swt('e13',0,this)">Professional</button><button class="tb" onclick="swt('e13',1,this)">Casual</button></div></div>
+    <div class="epb">
+      <div class="er"><label>To</label><div class="v">info@smilecraftdentalimplantcentre.com</div></div>
+      <div class="er"><label>Subject</label>
+        <div class="v vs tc on" id="e13-s0">Are You Still Manually Checking Appointment Forms? Let's Fix That 🦷</div>
+        <div class="v vs tc" id="e13-s1">Quick Question About Your Appointment Bookings 👋</div>
+      </div>
+      <div class="div"></div>
+      <div class="er"><label>Message</label>
+        <div class="v tc on" id="e13-b0">Hi Smile Craft Team,
+
+I came across your website and noticed your 'Book an Appointment' form. Quick question: when a patient fills it out, does your team manually check it, call them back, and confirm the slot?
+
+If yes — here's what I can automate for you:
+
+✅ Automatic booking confirmation — no manual step needed
+✅ Instant WhatsApp + email to patient and your team
+✅ Automated reminders 24 hrs and 2 hrs before each appointment
+✅ Patient CRM — all records in one clean dashboard
+✅ Post-visit follow-up for reviews and rebooking — fully automatic
+
+Free 15-minute demo. Would you be open to a quick call this week?
+
+Warm regards,
+[Your Name]
+[WhatsApp: +91 XXXXXXXXXX]</div>
+        <div class="v tc" id="e13-b1">Hi Smile Craft Team,
+
+Is your team still manually checking form submissions and calling patients to confirm?
+
+We automate this:
+→ Form submitted → instant WhatsApp + email confirmation
+→ Auto-reminders (no-shows drop 40–60%)
+→ CRM + post-visit reviews on autopilot
+
+Free 15-min demo?
+[Your Name] — [WhatsApp]</div>
+      </div>
+      <button class="cp" id="cp-e13" onclick="cop('e13')">📋 Copy Email</button>
+    </div>
+  </div>
+</div>
+
+<div class="lw country-ind">
+  <div class="lc" onclick="tog('e14',this)">
+    <div class="fl">🇮🇳</div>
+    <div>
+      <div class="ln">Seraphic Dental Clinic — Indore</div>
+      <div class="lm">30, Kanchan Bagh, South Tukoganj, Indore · ✉️ <a href="mailto:info@seraphicdental.com">info@seraphicdental.com</a> · 📞 +91-9993384941</div>
+      <div class="ltags"><span class="tg tg-g">✉️ Email Found</span><span class="tg tg-b">Booking Form</span><span class="tg tg-o">5-Star Reviews</span></div>
+    </div>
+    <div class="la"><span class="badge hot">🔴 Hot</span><button class="btn">View Email ↓</button></div>
+  </div>
+  <div class="ep" id="e14">
+    <div class="eph"><span class="epl">Pitch Email</span></div>
+    <div class="epb">
+      <div class="er"><label>To</label><div class="v">info@seraphicdental.com</div></div>
+      <div class="er"><label>Subject</label><div class="v vs">Automate Your Appointment Process — Free Demo for Seraphic Dental</div></div>
+      <div class="div"></div>
+      <div class="er"><label>Message</label><div class="v">Hi Dr. Vishakha,
+
+I came across Seraphic Dental Clinic — your smile transformations and 5-star reviews are genuinely impressive.
+
+Your appointment form currently asks patients to wait to be "contacted shortly" — meaning your team handles each submission manually.
+
+I help clinics like yours automate this entirely:
+
+✅ Instant WhatsApp + email confirmation on every booking
+✅ Smart reminders before each appointment — no-shows drop significantly
+✅ Patient CRM — all records, history, and follow-up notes in one place
+✅ Post-visit automation for Google reviews and rebooking
+
+Your front desk saves hours daily. Patients get a faster, more professional first impression.
+
+Free 15-min demo this week?
+
+Warm regards,
+[Your Name]
+[WhatsApp: +91 XXXXXXXXXX]</div></div>
+      <button class="cp" id="cp-e14" onclick="cop('e14')">📋 Copy Email</button>
+    </div>
+  </div>
+</div>
+
+<div class="lw country-ind">
+  <div class="lc" onclick="tog('e15',this)">
+    <div class="fl">🇮🇳</div>
+    <div>
+      <div class="ln">Rajeshwari Multispeciality Dental — Indore</div>
+      <div class="lm">Sangam House 14, Palasia, Indore · ✉️ <a href="mailto:info@indoredental.com">info@indoredental.com</a> · 📞 +91-922-922-3035</div>
+      <div class="ltags"><span class="tg tg-g">✉️ Email Found</span><span class="tg tg-b">Booking Form</span><span class="tg tg-b">Multispeciality</span></div>
+    </div>
+    <div class="la"><span class="badge warm">🟡 Warm</span><button class="btn">View Email ↓</button></div>
+  </div>
+  <div class="ep" id="e15">
+    <div class="eph"><span class="epl">Pitch Email</span></div>
+    <div class="epb">
+      <div class="er"><label>To</label><div class="v">info@indoredental.com</div></div>
+      <div class="er"><label>Subject</label><div class="v vs">Save Hours Every Week — Automate Your Appointment Bookings</div></div>
+      <div class="div"></div>
+      <div class="er"><label>Message</label><div class="v">Hi Dr. Saxena,
+
+I visited indoredental.com and noticed your online appointment form. Once a patient submits it, is your team manually following up to confirm the booking?
+
+I help multispeciality clinics like Rajeshwari automate this:
+
+✅ Instant confirmation — patient gets an automatic reply, no callbacks needed
+✅ WhatsApp + email alerts for your team and the patient
+✅ Smart reminders to reduce no-shows
+✅ CRM — all patient records, history, and follow-up notes in one dashboard
+✅ Specialist routing — enquiries can be directed to the right specialist automatically
+
+Free 15-minute demo this week?
+
+Regards,
+[Your Name]
+[WhatsApp: +91 XXXXXXXXXX]</div></div>
+      <button class="cp" id="cp-e15" onclick="cop('e15')">📋 Copy Email</button>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!-- TIPS -->
+<div class="tips">
+  <h3>💡 Global Outreach Pro Tips</h3>
+  <div class="tgrid">
+    <div class="tip"><div class="tt">🇬🇧 UK Strategy</div><p>Email works well. Use formal tone. Mention "private practice" to show market awareness. Avoid NHS-related framing.</p></div>
+    <div class="tip"><div class="tt">🇦🇪 UAE Strategy</div><p>WhatsApp first — dominant business channel in Dubai. Lead with response speed and market competition angle.</p></div>
+    <div class="tip"><div class="tt">🇦🇺 Australia Strategy</div><p>Strongest pitch: several AU clinics literally say "we will call you to confirm" on their site. Quote it back to them.</p></div>
+    <div class="tip"><div class="tt">🇨🇦 Canada Strategy</div><p>Mention CDCP (Canadian Dental Care Plan) — managing increased patient volume from CDCP is a major pain point in 2025/26.</p></div>
+    <div class="tip"><div class="tt">🇺🇸 USA Strategy</div><p>Lead with the "24–48 hour" hook — NYC/US patients won't wait. Speed is the primary angle for American practices.</p></div>
+    <div class="tip"><div class="tt">🇮🇳 India Strategy</div><p>WhatsApp works best. Keep messages shorter. Offer a free demo in Hindi if needed for non-English-first contacts.</p></div>
+    <div class="tip"><div class="tt">🔴 Start Here</div><p>Leads marked Hot have confirmed manual booking flows and verified emails — quickest path to a response.</p></div>
+    <div class="tip"><div class="tt">📹 Close with Demo</div><p>Once they reply, send a Loom video of the automation flow. Visual demos convert 3–4× better than text descriptions.</p></div>
+  </div>
+</div>
+
+</main>
+<footer>Global Dental Clinic Lead Kit · 15 Leads · 6 Countries · 🇬🇧 UK · 🇦🇪 UAE · 🇦🇺 Australia · 🇨🇦 Canada · 🇺🇸 USA · 🇮🇳 India</footer>
+
+<script>
+function tog(id,card){
+  const p=document.getElementById(id);
+  const isOpen=p.classList.contains('open');
+  document.querySelectorAll('.ep.open').forEach(e=>e.classList.remove('open'));
+  document.querySelectorAll('.lc.open').forEach(e=>e.classList.remove('open'));
+  if(!isOpen){p.classList.add('open');card.classList.add('open');}
+}
+function swt(id,idx,btn){
+  const ep=document.getElementById(id);
+  ep.querySelectorAll('.tb').forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+  ['s0','s1','b0','b1'].forEach(k=>{
+    const el=document.getElementById(id+'-'+k);
+    if(el) el.classList.remove('on');
+  });
+  if(idx===0){
+    const s0=document.getElementById(id+'-s0'); if(s0)s0.classList.add('on');
+    const b0=document.getElementById(id+'-b0'); if(b0)b0.classList.add('on');
+  } else {
+    const s1=document.getElementById(id+'-s1'); if(s1)s1.classList.add('on');
+    const b1=document.getElementById(id+'-b1'); if(b1)b1.classList.add('on');
+  }
+}
+function cop(id){
+  const ep=document.getElementById(id);
+  let subj='', body='';
+  const activeSubs=ep.querySelectorAll('.vs.on, .vs:not([id])');
+  const activeBods=ep.querySelectorAll('.v.tc.on:not(.vs), .v:not(.tc):not(.vs):not(label .v)');
+  if(activeSubs.length) subj=activeSubs[0].textContent.trim();
+  if(activeBods.length) body=activeBods[0].textContent.trim();
+  if(!body){
+    const allV=ep.querySelectorAll('.v');
+    allV.forEach(v=>{if(!v.classList.contains('vs'))body+=v.textContent.trim()+'\n\n';});
+  }
+  let text=(subj?'Subject: '+subj+'\n\n':'')+body.trim();
+  navigator.clipboard.writeText(text).then(()=>{
+    const btn=document.getElementById('cp-'+id);
+    const orig=btn.textContent;
+    btn.textContent='✅ Copied!';btn.classList.add('done');
+    setTimeout(()=>{btn.textContent=orig;btn.classList.remove('done');},2000);
+  });
+}
+function fil(c,btn){
+  document.querySelectorAll('.fb').forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+  if(c==='all'){
+    document.querySelectorAll('.lw,.sh').forEach(el=>el.style.display='');
+  } else {
+    document.querySelectorAll('.lw').forEach(el=>{
+      el.style.display=el.classList.contains('country-'+c)?'':'none';
+    });
+    document.querySelectorAll('.sh').forEach(el=>{
+      el.style.display=el.classList.contains('country-'+c)?'':'none';
+    });
+  }
+}
+</script>
+</body>
+</html>
